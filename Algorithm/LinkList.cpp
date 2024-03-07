@@ -64,3 +64,4 @@ void HeadInsertForDLNode(DoubleNodeLinkList &L,int elemArr[],int n){
 
 
 // The function for Both Of All END
+// Written by Star
