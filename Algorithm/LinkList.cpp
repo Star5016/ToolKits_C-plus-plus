@@ -50,6 +50,22 @@ void TailInsertForSLNode(SingleNodeLinkList &L,int elemArr[],int n){
 	r->next=NULL;//the last node point NULL
 }
 
+//3.Init SingleNodeLinkList
+void InitSLNode(SingleNodeLinkList &L){
+	L=new SingleNodeLinkList(sizeof(SingleNodeLinkList));
+	L->next=NULL;
+}
+
+void DestorySLNode(SingleNodeLinkList &L){
+	SingleNodeLinkList *pre=L, *p=L->next;
+	while(p!=NULL){
+		delete pre;
+		pre=p;
+		p=pre->next;
+	}
+	delete pre;
+}
+
 
 //The function for Single Node Link List  END
 
